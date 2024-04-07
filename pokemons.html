@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pokemons.css">
+    <title>Pokemons</title>
+</head>
+
+<body onload="onInit()">
+
+    <h1>POKEMONS</h1>
+
+    <a href="#" onclick="onDownloadCSV(this)" download="exported-data.csv">Download CSV</a>
+
+    <section class="pokemons-list"></section>
+    
+    <script src="lib/axios.js"></script>
+  
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/pokemons.service.js"></script>
+
+    <script src="js/pokemons.controller.js"></script>
+</body>
+</html>
